@@ -1,0 +1,26 @@
+{
+  "name": "ftc-code-share",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:server:dev\" \"npm:vite\"",
+    "vite": "vite",
+    "server:dev": "node --watch server/index.js",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "express": "^4.21.2",
+    "jszip": "^3.10.1",
+    "monaco-editor": "^0.52.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.5"
+  }
+}
